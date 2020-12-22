@@ -82,7 +82,7 @@ def usage(argv):
 	print "--passw, -p Is used to send password in basic authentication"
 	print "--proxy, -w Proxy support"
 	print "--output, -o Set Output file"
-	print "--hexa, -x encode the url to exa"
+	print "--hexa, -x encode the url to hexa"
 
 
 def detroot (urlt, us, pw, prox, out_f):
